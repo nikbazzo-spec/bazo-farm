@@ -41,7 +41,7 @@ function SoloPage() {
     return (
       <NovaAnalise
         talhaoIdInicial={talhaoIdParam || undefined}
-        onSave={(analise) => { setAnaliseAtual(analise); setView("result"); }}
+        onSave={(analise: any) => { setAnaliseAtual(analise); setView("result"); }}
         onCancel={() => setView("list")}
       />
     );
